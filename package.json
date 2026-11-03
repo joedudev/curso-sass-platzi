@@ -1,0 +1,26 @@
+{
+	"name": "curso-sass-platzi",
+	"version": "1.0.0",
+	"description": "<div align=\"center\">",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass --watch scss:css",
+		"build": "sass scss:css --style=compressed --no-source-map"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joedudev/curso-sass-platzi.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/joedudev/curso-sass-platzi/issues"
+	},
+	"homepage": "https://github.com/joedudev/curso-sass-platzi#readme",
+	"devDependencies": {
+		"sass": "^1.107.1"
+	}
+}
