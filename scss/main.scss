@@ -18,14 +18,30 @@ $font-weight-medium: 500;
 $font-weight-bold: 700;
 
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
+	background-color: $primary-color;
+	font-family: $font-stack;
 }
 
 nav {
-	background-color: $primary-color;
-	width: 100%;
-	height: 300px;
+	width: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	color: $primary-text-color;
+	p {
+		font-size: 1.5em;
+		padding-left: 30px;
+	}
+	.icons {
+		display: flex;
+		gap: 15px;
+		button {
+			background: none;
+			border-style: none;
+		}
+	}
 }
 
 main {
