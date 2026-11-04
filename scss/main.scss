@@ -18,8 +18,8 @@ $font-weight-medium: 500;
 $font-weight-bold: 700;
 
 // Iconos
-$icon-color: #2e7d32;
-$icon-size: 24px;
+$icon-color: $primary-text-color;
+$icon-size: 36px;
 
 // ==========================================================================
 // Mixins
@@ -40,14 +40,17 @@ body {
 }
 
 nav {
-	width: 100%;
-	height: 300px;
+	width: auto;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
 	p {
 		font-size: 1.5em;
 		padding-left: 30px;
 	}
 	.icons {
 		display: flex;
+		gap: 15px;
 		button {
 			background-color: $icon-color;
 			border-style: none;
