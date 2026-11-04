@@ -17,6 +17,21 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 
+// Iconos
+$icon-color: $primary-text-color;
+$icon-size: 36px;
+
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+@mixin icon-mask($file) {
+	-webkit-mask: url("../assets/svg/#{$file}") no-repeat center / contain;
+	mask: url("../assets/svg/#{$file}") no-repeat center / contain;
+}
+
+// ==========================================================================
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -26,10 +41,9 @@ body {
 
 nav {
 	width: auto;
-	padding: 20px;
+	padding: 15px 30px;
 	display: flex;
 	justify-content: space-between;
-	color: $primary-text-color;
 	p {
 		font-size: 1.5em;
 		padding-left: 30px;
@@ -38,8 +52,19 @@ nav {
 		display: flex;
 		gap: 15px;
 		button {
-			background: none;
+			background-color: $icon-color;
 			border-style: none;
+			width: $icon-size;
+			height: $icon-size;
+		}
+		.profile {
+			@include icon-mask("profile.svg");
+		}
+		.whislist {
+			@include icon-mask("heart.svg");
+		}
+		.cart {
+			@include icon-mask("shopping-cart.svg");
 		}
 	}
 }

@@ -7,10 +7,9 @@ body {
 
 nav {
   width: auto;
-  padding: 20px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
-  color: #7c6a0a;
 }
 nav p {
   font-size: 1.5em;
@@ -21,8 +20,22 @@ nav .icons {
   gap: 15px;
 }
 nav .icons button {
-  background: none;
+  background-color: #7c6a0a;
   border-style: none;
+  width: 36px;
+  height: 36px;
+}
+nav .icons .profile {
+  -webkit-mask: url("../assets/svg/profile.svg") no-repeat center/contain;
+  mask: url("../assets/svg/profile.svg") no-repeat center/contain;
+}
+nav .icons .whislist {
+  -webkit-mask: url("../assets/svg/heart.svg") no-repeat center/contain;
+  mask: url("../assets/svg/heart.svg") no-repeat center/contain;
+}
+nav .icons .cart {
+  -webkit-mask: url("../assets/svg/shopping-cart.svg") no-repeat center/contain;
+  mask: url("../assets/svg/shopping-cart.svg") no-repeat center/contain;
 }
 
 main {
