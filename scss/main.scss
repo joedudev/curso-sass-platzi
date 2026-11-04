@@ -8,7 +8,7 @@ $secondary-color: #ffdac6;
 $tertiary-color: #babd8d;
 $primary-text-color: #7c6a0a;
 $accent-color: #e86424;
-$accent-light-color: #fa9500;
+// $accent-light-color: #fa9500;
 
 // Tipografía
 $font-stack: "IBM Plex Sans", sans-serif;
@@ -20,4 +20,21 @@ $font-weight-bold: 700;
 body {
 	margin: 0;
 	padding: 0;
+}
+
+nav {
+	background-color: $primary-color;
+	width: 100%;
+	height: 300px;
+}
+
+main {
+	background-color: $primary-color;
+}
+
+footer {
+	$background: #fa9500;
+	background-color: $background;
+	width: 100%;
+	height: 250px;
 }
